@@ -1,0 +1,71 @@
+list = (7, 2, 23, 6, 30, 15, 30, 22)
+
+1) Split list into two 
+
+	middle = floor(list.length/2) = 4
+
+	a1 = list[0 .. middle -1] = (7, 2, 23, 6)
+	b1 = list [middle .. length-1] = (30, 15, 30, 22)
+
+2) Split list a1 into two
+
+	middle_a1 = floor(a1.length/2) = 2
+	a2.1 = a1[0 .. middle_a1 - 1] = (7, 2)
+	a2.2 = a1[middle_a1 .. a1.length - 1] = (23, 6)
+	
+3) Split list b1 into two
+
+	middle_b1 = floor(b1.length/2) = 2
+	b2.1 = b1[0 .. middle_b1 - 1] = (30, 15)
+	b2.2 = b1[middle_b1 .. b1.length - 1] = (30, 22)
+
+4) Split list a2.1 into two
+
+	middle_a2.1 = floor(a2.1.length/2) = 1
+	a3.1.1 = a2.1[0 .. middle_a2.1 - 1] = (7)
+	a3.1.2 = a2.1[middle_a1 .. a2.1.length - 1] = (2)
+
+5) Split list a2.2 into two
+
+	middle_a2.2 = floor(a2.2.length/2) = 1
+	a3.2.1 = a2.2[0 .. middle_a2.2 - 1] = (23)
+	a3.2.2 = a2.2[middle_a2.2 .. a2.2.length - 1] = (6)
+	
+6) Split list b2.1 into two
+
+	middle_b2.1 = floor(b2.1.length/2) = 1
+	b3.1.1 = b2.1[0 .. middle_b2.1 - 1] = (30)
+	b3.1.2 = b2.1[middle_b1 .. b2.1.length - 1] = (15)
+
+7) Split list b2.2 into two
+
+	middle_b2.2 = floor(b2.2.length/2) = 1
+	b3.2.1 = b2.2[0 .. middle_b2.2 - 1] = (30)
+	b3.2.2 = b2.2[middle_b2.2 .. b2.2.length - 1] = (22)
+	
+8) List Length == 1
+	return list
+	
+9) Merge b3.2.1 and b3.2.2    (2 operations)
+	b3.2 = (22, 30)
+	
+10) Merge b3.1.1 and b3.1.2   (2 operations)
+	b3.1 = (15, 30)
+	
+11) Merge a3.2.1 and a3.2.2   (2 operations)
+	a3.2 = (6, 23)
+	
+12) Merge a3.1.1 and a3.1.2   (2 operations)
+	a3.1 = (2, 7)
+
+13) Merge b3.1 and b3.2       (4 operations)
+	b3 = (15, 22, 30, 30)
+
+14 Merge a3.1 and a3.2        (4 operations)
+	a3 = (2, 6, 7, 23)
+	
+15 Merge b3 and a3            (8 operations)
+	list = (2, 6, 7, 15, 22, 23, 30, 30)
+
+
+	
