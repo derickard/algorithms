@@ -1,18 +1,18 @@
 1.) a) O(1)
     b) O(n)
-	c) O(n^2)
-	d) O(log n)
+    c) O(n^2)
+    d) O(log n)
 	
 2.) a) O(n) n is characters in string
     b) O(n^2) n is size of matrix
-	c) O(n) n is number of strings, unreduced in O(10n)
+    c) O(n) n is number of strings, unreduced in O(10n)
 	
 3.) a) O(n)
     b) O(n)
-	c) O(n)
-	d) O(n)
+    c) O(n)
+    d) O(n)
 	
-4.) a) O(n^2)
+4.) a) O(n)
     b) O(n)
-	c) O(1)
-	d) O(n^2)
+    c) O(1)
+    d) O(n)
